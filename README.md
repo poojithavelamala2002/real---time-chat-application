@@ -12,28 +12,24 @@ A real-time chat application built with Node.js, Express.js, and Socket.IO, feat
 - Ensure the following are installed:
 
 1. Node.js (v14 or higher)
-2.A web browser (e.g., Chrome, Edge)
+2. A web browser (e.g., Chrome, Edge)
 
 ## Installation
 - Clone the repository:
 ```bash
-Copy code
 git clone https://github.com/poojithavelamala2002/chat-socket.io.git
 cd chat-socket.io
 ```
 ## Install dependencies:
 ```bash
-Copy code
 npm install
 ```
 ## Start the server:
 ```bash
-Copy code
 npm start
 ```
 ## Open in your browser:
 ```text
-Copy code
 http://localhost:4000
 ```
 ## Usage
@@ -44,7 +40,6 @@ http://localhost:4000
   
 ## Folder Structure
 ```plaintext
-Copy code
 chat-socket.io/
 ├── public/
 │   ├── index.html       # Main HTML file
@@ -62,10 +57,18 @@ chat-socket.io/
   
 ## Known Issues
 - Typing indicators may persist momentarily after a user stops typing.
-- Private messaging depends on socket.id, which resets if the user reloads.
-  
+- Private messages are sent based on socket IDs. However, if a user refreshes the page, their socket ID changes, making previous private connections invalid.
+
 ## Contributing
 Contributions are welcome! Fork the repository and submit a pull request for new features or bug fixes.
+To contribute:
+
+- Fork the repository.
+- Create a new branch (git checkout -b feature-name).
+- Make your changes and commit (git commit -m "Added new feature").
+- Push to your fork (git push origin feature-name).
+- Submit a pull request with a clear description.
+
 
 
 
